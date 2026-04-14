@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color: #121722;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f4f7fb;
+}
+
+.bg-pattern {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(255, 140, 102, 0.16), transparent 40%),
+        radial-gradient(circle at 90% 0%, rgba(183, 244, 207, 0.4), transparent 35%),
+        repeating-linear-gradient(120deg, rgba(18, 23, 34, 0.02) 0, rgba(18, 23, 34, 0.02) 1px, transparent 1px, transparent 22px),
+        linear-gradient(135deg, #eef4f8 0%, #f7fbff 45%, #edf2fb 100%);
+}
+
+input,
+select,
+button,
+a {
+    outline: none;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    box-shadow: 0 0 0 3px rgba(18, 23, 34, 0.18);
+}
